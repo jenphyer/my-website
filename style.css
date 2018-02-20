@@ -1,0 +1,160 @@
+html, body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.3em;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  font-family: 'Open Sans', sans-serif;
+}
+
+aside {
+  width: 800px;
+  padding: 60px;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+}
+
+aside img {
+  display: block;
+  margin: 80px auto 0;
+  border-radius: 40px;
+}
+
+aside .title {
+  font-size: 36px;
+  margin: 1em auto;
+}
+
+aside .subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 1em auto;
+  max-width: 350px;
+  text-align: left;
+}
+
+aside .actions a {
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 36px;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  padding: 60px;
+  overflow-y: auto;
+}
+
+section > .title {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.projects article {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.projects article .image {
+  display: block;
+  width: 250px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.projects article .content {
+  flex-grow: 1;
+  position: relative;
+  font-size: 12px;
+}
+
+.projects article .title {
+  font-size: 24px;
+  margin: 0.25em 0;
+}
+
+.projects article .summary {
+  margin-top: 0;
+  height: 128px;
+  overflow: hidden;
+}
+
+.projects article .link {
+  display: block;
+  position: absolute;
+  bottom: 0.5em;
+}
+
+article[data-label="project-1"] {
+  background-image: url(assets/project-1.png);
+}
+
+article[data-label="project-2"] {
+  background-image: url(assets/project-2.png);
+}
+
+article[data-label="project-3"] {
+  background-image: url(assets/project-3.png);
+}
+
+main > section:last-of-type {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  aside {
+    width: 100%;
+    padding: 20px;
+  }
+
+  aside img {
+    margin-top: 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  section > .title {
+    text-align: center;
+  }
+
+  .projects article {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projects article .image {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .projects article .link {
+    position: static;
+  }
+
+  main > section:last-of-type {
+    margin-bottom: 20px;
+  }
+}
