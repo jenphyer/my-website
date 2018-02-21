@@ -62,16 +62,13 @@ aside .actions a {
 
 main {
   flex-grow: 1;
-  padding: 40px 60px;
+  padding: 60px;
+  padding-bottom: 0;
   overflow-y: auto;
 }
 
 section {
   margin-bottom: 60px;
-}
-
-section:last-of-type {
-  margin-bottom: 0;
 }
 
 section > .title {
@@ -166,6 +163,7 @@ article[data-label="project-3"] .image {
 
   main {
     padding: 40px;
+    padding-bottom: 0;
   }
 
   .projects article {
@@ -212,10 +210,7 @@ article[data-label="project-3"] .image {
 
   main {
     padding: 80px;
-  }
-
-  section:last-of-type {
-    margin-bottom: 60px;
+    padding-bottom: 0;
   }
 
   section > .title {
@@ -230,5 +225,6 @@ article[data-label="project-3"] .image {
 
   main {
     padding: 30px;
+    padding-bottom: 0;
   }
 }
