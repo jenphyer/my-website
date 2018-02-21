@@ -17,6 +17,7 @@ body {
   flex-direction: row;
   align-items: stretch;
   font-family: 'Open Sans', sans-serif;
+  color: #17385B;
 }
 
 aside {
@@ -109,12 +110,11 @@ section > .title {
 
 .projects article .title {
   margin: 0 0 0.5em;
-  color:#17385B;
   font-size: 20px;
 }
 
 .projects article .summary {
-  max-height: 105px;
+  max-height: 112px;
   overflow: auto;
 }
 
@@ -144,6 +144,7 @@ article[data-label="project-3"] .image {
   }
 
   .projects article .summary {
+    max-height: 105px;
     line-height: 1.5em;
   }
 }
@@ -182,8 +183,9 @@ article[data-label="project-3"] .image {
   }
 
   .projects article .summary {
-    height: auto;
+    max-height: none;
     margin-bottom: 1em;
+    line-height: 2em;
   }
 
   .projects article .link {
