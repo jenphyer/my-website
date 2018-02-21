@@ -127,15 +127,15 @@ section > .title {
 }
 
 article[data-label="project-1"] .image {
-  background-image: url(assets/Group2.png);
+  background-image: url(assets/Group2_Pic.png);
 }
 
 article[data-label="project-2"] .image {
-  background-image: url(assets/Group3.jpg);
+  background-image: url(assets/Group3_Pic.jpg);
 }
 
 article[data-label="project-3"] .image {
-  background-image: url(assets/Group1.jpg);
+  background-image: url(assets/Group1_Pic.jpg);
 }
 
 @media (max-width: 1200px) {
